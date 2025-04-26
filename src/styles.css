@@ -1,0 +1,15 @@
+* {
+  direction: rtl;
+}
+:root {
+  --main-Color: #ff6501;
+}
+
+h3 {
+  color: #154293 !important ;
+  font-size: 30px !important;
+  padding: 20px 0;
+}
+.bg-orange {
+  background-color: var(--main-Color);
+}

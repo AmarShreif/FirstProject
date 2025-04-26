@@ -1,0 +1,14 @@
+.nav-item .nav-link {
+  font-weight: bold;
+  padding: 5px 15px;
+  color: black;
+  text-align: center;
+  &:hover {
+    color: white;
+  }
+}
+.nav-item:hover {
+  background-color: #ff6501;
+  border-radius: 30px;
+  transition: all 0s;
+}

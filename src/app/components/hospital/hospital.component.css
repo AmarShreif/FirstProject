@@ -1,0 +1,21 @@
+section h2 {
+  background-color: #ff6501;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+section .container div {
+  margin: 20px;
+}
+.photo {
+  position: relative;
+}
+.photo::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: gray;
+  top: 0;
+  left: -20px;
+}

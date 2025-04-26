@@ -1,0 +1,35 @@
+@media (max-width: 510px) {
+  h4 {
+    font-size: 20px !important;
+    text-align: center;
+  }
+  span {
+    font-size: 18px !important;
+  }
+}
+
+span {
+  color: #ff8331;
+  border-radius: 30px;
+  background-color: white;
+  padding: 0 10px;
+  font-weight: 700;
+}
+.older-orange {
+  border: 1px solid #ff8331;
+}
+.border-design {
+  border: 1px solid #ff8331;
+  border-top: 0;
+  margin: -55px 48px 48px;
+  padding-top: 20px;
+}
+input {
+  width: 100%;
+}
+.bttn {
+  width: 120px;
+  padding: 5px;
+  color: white;
+  margin: auto;
+}

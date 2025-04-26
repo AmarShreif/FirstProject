@@ -1,0 +1,12 @@
+li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 100;
+}
+img {
+  width: 25px;
+  margin: 10px 5px;
+}
+a {
+  font-size: 14px;
+}

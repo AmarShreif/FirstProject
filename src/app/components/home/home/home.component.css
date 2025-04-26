@@ -1,0 +1,56 @@
+header {
+  background-image: url("/Rectangle\ 53.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 992px) {
+  header {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(255, 255, 255),
+        transparent
+      ),
+      url("/Rectangle 55.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+  }
+  .style {
+    text-align: center;
+  }
+  h1 {
+    position: relative;
+    color: #ff6501;
+    z-index: 22;
+    margin: auto;
+    width: 300px;
+  }
+}
+
+.style {
+  padding-top: 100px;
+}
+h1 {
+  position: relative;
+  color: #ff6501;
+  z-index: 2;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  height: 18px;
+  background-color: #ffc300;
+  z-index: -1;
+}
+
+.bg-orange {
+  background-color: #ff6501;
+}
