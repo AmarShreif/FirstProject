@@ -8,63 +8,85 @@
         <span class="fs-4">احجز الان</span>
       </div>
     </div>
-
-    <div class="row border-design">
-      <div class="col-sm-6">
-        <form>
-          <label class="my-1" for="name"
-            >الاسم :<span class="text-danger m-0 p-0 px-2">*</span></label
-          >
-          <input
-            placeholder="اكتب اسمك ثلاثي"
-            type="text"
-            id="name"
-            class="form-control shadow-none older-orange mb-3"
-          />
-          <label class="my-1" for="phone"
-            >رقم الهاتف :<span class="text-danger m-0 p-0 px-2">*</span></label
-          >
-          <input
-            placeholder="رقم هاتفك"
-            type="tel"
-            id="phone"
-            class="form-control shadow-none older-orange mb-3"
-          />
-          <label class="my-1" for="email"
-            >البريد الإلكتروني :
-            <span class="text-danger m-0 p-0 px-1">*</span></label
-          >
-          <input
-            placeholder="بريد الالكتروني"
-            type="email"
-            id="email"
-            class="form-control shadow-none older-orange"
-          />
-        </form>
-      </div>
-      <div class="col-sm-6">
-        <form class="pb-4">
-          <label for="specialty" class="my-1"
-            >التخصص : <span class="text-danger m-0 p-0 pt-1">*</span>
+    <form
+      class="border-design"
+      [formGroup]="contactForm"
+      (ngSubmit)="onSubmit()"
+    >
+      <div class="d-flex justify-content-between mx-5 my-3 meida">
+        <div class="w-100">
+          <label for="name"
+            >الاسم
+            <span class="text-danger">*</span>
           </label>
           <input
-            placeholder="اختر التخصص"
+            formControlName="name"
             type="text"
-            id="specialty"
-            class="form-control shadow-none older-orange"
+            class="form-control older-orange shadow-none"
+            id="name"
+            placeholder="ادخل اسمك"
           />
-          <label for="Medical complaint" class="mt-3 py-1">
-            الشكوى الطبية</label
-          >
-          <textarea
-            rows="4"
-            placeholder="احكي معانا"
-            id="Medical complaint"
-            class="form-control shadow-none older-orange"
-          ></textarea>
-        </form>
+        </div>
+        <div class="w-100">
+          <label for="phone"
+            >ادخل هاتفك
+            <span class="text-danger">*</span>
+          </label>
+          <input
+            formControlName="phone"
+            type="tel"
+            class="form-control older-orange shadow-none"
+            id="phone"
+            placeholder="ادخل رقم الهاتف"
+          />
+        </div>
       </div>
-      <button class="border-0 rounded-2 my-4 bttn bg-orange">ارسال</button>
-    </div>
+      <div class="d-flex justify-content-between mx-5 my-3 meida">
+        <div class="w-100">
+          <label for="email"
+            >البريد الإلكتروني
+            <span class="text-danger">*</span>
+          </label>
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control older-orange shadow-none"
+            id="email"
+            placeholder="ادخل البريد الإلكتروني "
+          />
+        </div>
+        <div class="w-100">
+          <label for="Specialties"
+            >التخصص
+            <span class="text-danger">*</span>
+          </label>
+          <input
+            formControlName="specialization"
+            type="text"
+            class="form-control older-orange shadow-none"
+            id="specialization"
+            placeholder="اختر التخصص الذي تريده"
+          />
+        </div>
+      </div>
+      <div class="mx-5">
+        <label for="description">
+          شكوي طيبة
+          <span class="text-danger">*</span>
+        </label>
+        <textarea
+          formControlName="description"
+          class="form-control older-orange shadow-none mb-5"
+          id="description"
+          rows="3"
+          placeholder="اكتب ملاحظاتك "
+        ></textarea>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <button class="border-0 rounded-2 text-white mb-3 bttn bg-orange">
+          ارسال
+        </button>
+      </div>
+    </form>
   </div>
 </section>
